@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mori Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand-logo">MORIBEN</div>
+        <div class="menu-tab active" onclick="scrollToSection('top')">All</div>
+        <div class="menu-tab lunch-tab-style" onclick="scrollToSection('mori-ben')">Mori - Ben</div>
+        <div class="menu-tab lunch-tab-style" onclick="scrollToSection('mori-lunch-roll')">Mori Lunch Roll</div>
+        <div class="menu-tab lunch-tab-style" onclick="scrollToSection('mori-snack')">Mori Snack</div>
+        <div class="menu-tab lunch-tab-style" onclick="scrollToSection('mori-sushi-box')">Mori Sushi Box</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-signature')">Mori Signature</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-sushi-sashimi')">Mori Sushi & Sashimi</div>
+        <div class="menu-tab platter-tab" onclick="scrollToSection('platter')">Platter</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-main-meal')">Mori Main Meal</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-noodle')">Mori Noodle</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-salad')">Mori Salad</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-share')">Mori Share</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-kids')">Mori Kids</div>
+        <div class="menu-tab" onclick="scrollToSection('mori-dessert')">Mori Dessert</div>
+        <div class="menu-tab" onclick="scrollToSection('side-dish')">Side Dish</div>
+        <div class="menu-tab" onclick="scrollToSection('drinks')">Drinks</div>
+    </div>
+
+    <div class="main-content" id="top">
+        
+        <div class="menu-section" id="mori-ben">
+            <div class="sub-category-title" style="color: var(--mori-red); margin-top: 30px;">Mori - Ben (Lunch Special)</div>
+            <div class="sub-category-desc">[Main + Salad + California Roll + Deep Fried] - Roll Change Extra Charge</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Sashimi Don</h3><p class="menu-desc">Assorted sashimi, avocado, crunch salad, flying fish roe, sesame-oil, seaweed salad on rice</p><div class="menu-price">$22</div></div><img src="images/Mori-Ben-Sashimi-Don.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Teriyaki Salmon</h3><p class="menu-desc">Salmon with teriyaki sauce, crunch salad, california roll and deep fry</p><div class="menu-price">$22</div></div><img src="images/Mori-Ben-Teriyaki-Salmon.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Teriyaki chicken</h3><p class="menu-desc">Chicken with teriyaki sauce, crunch salad, california roll and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/mori-ben-teriyaki-chicken.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Chilli Teriyaki chicken</h3><p class="menu-desc">Chicken with spicy chilli teriyaki sauce, crunch salad, california roll, and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/Mori-Ben-Chilli-Teriyaki-chicken.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Chicken Katsu</h3><p class="menu-desc">Japanese chicken schnitzel, crunch salad, california roll and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/Mori-Ben-Chicken-Katsu.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Chicken Karaage</h3><p class="menu-desc">Garlic soy marinade deep fried chicken, crunch salad, california roll and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/Mori-Ben-Chicken-Karaage.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">7. Teriyaki Prawn</h3><p class="menu-desc">Prawn with teriyaki sauce, crunch salad, california roll and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/Mori-Ben-Teriyaki-Prown.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">8. Teriyaki Tofu (V)</h3><p class="menu-desc">Fried tofu with teriyaki sauce, crunch salad, vegetarian roll and deep fry</p><div class="menu-price">$19.5</div></div><img src="images/Mori-Ben-Teriyaki-Tofu.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-lunch-roll">
+            <div class="sub-category-title" style="color: var(--mori-red);">Mori Lunch Roll</div>
+            <div class="sub-category-desc">[Choose plain, extra option : sauce ($1), Spicy (Spicy sauce and sichimi), crunch, Tobikko ($3)]</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Salmon & Avo Roll (GF)</h3><p class="menu-desc">Fresh salmon and avocado with sesame seed</p><div class="menu-price">$8</div></div><img src="images/Mori-Lunch-Roll-Salmon-And-Avo-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Teriyaki chicken & Avo Roll</h3><p class="menu-desc">Chicken with teriyaki sauce and avocado with sesame seed</p><div class="menu-price">$8</div></div><img src="/images/Mori-Lunch-Roll-Teriyaki-Chicken-And-Avo-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Chicken Katsu & Avo Roll</h3><p class="menu-desc">Japanese chicken schnitzel and avocado with sesame seed</p><div class="menu-price">$8</div></div><img src="images/Mori-Lunch-Roll-Chicken-Katsu-And-Avo-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Cooked Tuna & Avo Roll (GF)</h3><p class="menu-desc">Cooked tuna mayo and avocado with sesame seed</p><div class="menu-price">$8</div></div><img src="/images/Mori-Lunch-Roll-Cooked-Tuna-And-Avo-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Prawn Tempura & Avo Roll</h3><p class="menu-desc">Prawn tempura and avocado with sesame seed</p><div class="menu-price">$8</div></div><img src="images/Mori-Lunch-Roll-Prawn-Tempura-And-Avo-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. California Roll</h3><p class="menu-desc">Crab stick mayo, cucumber, avocado, and on top flying fish roe</p><div class="menu-price">$8</div></div><img src="images/Mori-Lunch-Roll-Caraifornia-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">7. Veggie Roll (V)</h3><p class="menu-desc">Seasoned soybean curd, cucumber, avocado, seaweed salad with sesame seed</p><div class="menu-price">$8</div></div><img src="images/Mori-Lunch-Roll-Veggie-Roll.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-snack">
+            <div class="sub-category-title" style="color: var(--mori-red);">Mori Snack</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Chicken Karaage Skewer</h3><p class="menu-desc">Garlic soy marinade Japanese deep fried chicken</p><div class="menu-price">$8</div></div><img src="images/Mori-Snack-Chicken-Karaage-Skewer.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Teriyaki Chicken Skewer</h3><p class="menu-desc">Chicken with teriyaki sauce</p><div class="menu-price">$8</div></div><img src="images/Mori-Snack-Teriyaki-Chicken-Skewer.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Prawn Gyoza</h3><p class="menu-desc">Deep fried prawn gyoza 3pcs</p><div class="menu-price">$7</div></div><img src="images/Mori-Snack-Prawn-Gyoza-Skewer.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Takoyaki Skewer</h3><p class="menu-desc">Deep fried octopus ball 3pcs</p><div class="menu-price">$5</div></div><img src="images/Mori-Snack-Takoyaki-Skewer.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Veggie Tempura (V)</h3><p class="menu-desc">Deep fried Vegetable</p><div class="menu-price">$5</div></div><img src="images/Mori-Snack-Veggie-Tempura.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Spring Roll</h3><p class="menu-desc">Deep fried vegetable spring roll</p><div class="menu-price">$3.5</div></div><img src="images/Mori-Snack-Spring-Roll.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-sushi-box">
+            <div class="sub-category-title" style="color: var(--mori-red);">Mori Sushi Box</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Fresh salmon box (GF)</h3><p class="menu-desc">Salmon & avocado roll with salmon nigiri sushi</p><div class="menu-price">$18</div></div><img src="images/Mori-Sushi-Box-Fresh-Salmon-Box.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Grilled salmon box (GF)</h3><p class="menu-desc">Salmon & avocado roll with grilled salmon nigiri sushi</p><div class="menu-price">$19</div></div><img src="images/Mori-Sushi-Box-Grilled-Salmon-Box.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Spicy grilled Salmon box (GF)</h3><p class="menu-desc">Salmon & avocado roll with spicy grilled salmon nigiri sushi</p><div class="menu-price">$19</div></div><img src="images/Mori-Sushi-Box-Spicy-Salmon-Box.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-signature">
+            <div class="sub-category-title">Mori Signature</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Ocean Roll (GF)</h3><p class="menu-desc">Fresh salmon, avocado, cucumber, cream cheese on top grilled salmon with flying fish roe, honey mayonnaise and sweet soy sauce</p><div class="menu-price">$23</div></div><img src="images/Mori-Signature-Ocean-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Spicy Teriyaki Salmon Roll</h3><p class="menu-desc">Teriyaki salmon, avocado and cucumber, on top grilled salmon flying fish roe, chilli mayonnaise, sweet soy sauce and sichimi</p><div class="menu-price">$23</div></div><img src="images/Mori-Signature-Spicy-Teriyaki-Salmon-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Spider Roll (GF)</h3><p class="menu-desc">Deep fried soft shell crab, cucumber, on top avocado with wasabi mayonnaise</p><div class="menu-price">$23</div></div><img src="images/Mori-Signature-Spider-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Tiger Roll</h3><p class="menu-desc">Deep fried prawn, cucumber, on top avocado and cooked prawn with honey mayonnaise and sweet soy sauce</p><div class="menu-price">$21</div></div><img src="images/Mori-Signature-Tiger-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Rainbow Roll (GF)</h3><p class="menu-desc">Flying fish roe, cucumber, avocado, on top salmon, cooked prawn and avocado with chilli mayonnaise and honey mayonnaise</p><div class="menu-price">$21</div></div><img src="images/Mori-Signature-Rainbow-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Katsu Crunch Roll</h3><p class="menu-desc">Japanese chicken schnitzel, avocado, cucumber, on top tonkatsu with honey mayonnaise and sweet soy sauce</p><div class="menu-price">$21</div></div><img src="images/Mori-Signature-Katsu-Crunch-Roll.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">7. Veggie Crunch Roll (V)</h3><p class="menu-desc">Deep fried vegetable, avocado, cucumber, on top tonkatsu with honey mayonnaise and sweet soy sauce</p><div class="menu-price">$21</div></div><img src="images/Mori-Signature-Veggie-Crunch-Roll.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-sushi-sashimi">
+            <div class="sub-category-title">Mori - Sushi & Sashimi</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Salmon Sushi (5pcs) (GF)</h3><div class="menu-price">$15</div></div><img src="images/Mori-Sushi-Sashimi-Salmon.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Grilled Salmon Sushi (5pcs) (GF)</h3><div class="menu-price">$16</div></div><img src="images/Mori-Sushi-Sashimi-Grilled-Salmon.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Spicy Grilled Salmon Sushi (5pcs) (GF)</h3><div class="menu-price">$16</div></div><img src="images/Mori-Sushi-Sashimi-Spicy-Grilled-Salmon.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Cooked Prawn Sushi (5pcs) (GF)</h3><div class="menu-price">$13</div></div><img src="images/Mori-Sushi-Sashimi-Cooked-Prawn.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Grilled Prawn Sushi (5pcs)</h3><div class="menu-price">$14</div></div><img src="images/Mori-Sushi-Sashimi-grilled-Prawn.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Spicy Grilled Prawn Sushi (5pcs)</h3><div class="menu-price">$14</div></div><img src="images/Mori-Sushi-Sashimi-Spicy-Grilled-Prawn.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">7. Grilled Scallop Sushi (5pcs)</h3><div class="menu-price">$20</div></div><img src="images/Mori-Sushi-Sashimi-Grilled-Scallop.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">8. Salmon Sashimi (6pcs)</h3><div class="menu-price">$17</div></div><img src="images/Mori-Sushi-Sashimi-Salmon-Sashimi.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">9. Sashimi Tacos</h3><p class="menu-desc">Salmon, tuna, avocado, yuzu granita, sesame oil, flying fish roe and wonton cracker</p><div class="menu-price">$32</div></div><img src="images/Mori-Sushi-Sashimi-Sashimi-Tacos.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">10. Salmon Moriawase</h3><p class="menu-desc">Salmon sashimi 3pcs, salmon sushi 3pcs, salmon baby roll 6pcs</p><div class="menu-price">$22</div></div><img src="images/Mori-Sushi-Sashimi-Salmon-Moriawase.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="platter">
+            <div class="sub-category-title">Platter</div>
+            <div class="sub-category-desc">[Please order at least 2hours in advance]</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Salmon Platter</h3><p class="menu-desc">Salmon sashimi(8pcs), Salmon nigiri(8pcs), Grilled salmon nigiri(8pcs), Salmon & Avocado roll(8pcs), Ocean roll(8pcs)</p><div class="menu-price">$89</div></div><img src="images/Mori-Platter-Salmon-Platter.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Signature Roll Platter</h3><p class="menu-desc">Ocean roll, Rainbow roll, Tiger roll, Spider roll</p><div class="menu-price">$84</div></div><img src="images/Mori-Platter-Signature-Roll-Platter.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Maki Platter</h3><p class="menu-desc">Salmon & Avocado roll, Cooked tuna & Avocado roll, Katsu & Avocado roll, California Roll, Teriyaki Chicken & Avocado roll, Salmon baby roll</p><div class="menu-price">$79</div></div><img src="images/Mori-Platter-Maki-Platter.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Mini Roll Platter</h3><p class="menu-desc">Salmon baby roll, Avocado baby roll, Cooked tuna baby roll, Cucumber baby roll, Teriyaki chicken baby roll</p><div class="menu-price">$54</div></div><img src="images/Mori-Platter-Mini-Roll-Platter.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Chicken Karaage Platter</h3><p class="menu-desc">Garlic soy marinade Japanese deep fried chicken with honey mayonnaise</p><div class="menu-price">$59</div></div><img src="images/Mori-Platter-Chicken-Karaage-Platter.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Gyoza Platter</h3><p class="menu-desc">Pork gyoza(10pcs) & Prawn gyoza(10pcs)</p><div class="menu-price">$44</div></div><img src="images/Mori-Platter-Gyoza-Platter.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-main-meal">
+            <div class="sub-category-title">Mori Main Meal</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Teriyaki Salmon</h3><p class="menu-desc">Salmon with teriyaki sauce, crunch salad, steamed vegetable with rice</p><div class="menu-price">$28</div></div><img src="images/Mori-Main-Meal-Teriyaki-Salmon.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Teriyaki Chicken</h3><p class="menu-desc">Chicken with teriyaki sauce, crunch salad, steamed vegetable with rice</p><div class="menu-price">$26</div></div><img src="images/Mori-Main-Meal-Teriyaki-Chicken.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Chilli Teriyaki Chicken</h3><p class="menu-desc">Chicken with spicy chilli teriyaki sauce, crunch salad, steamed vegetable with rice</p><div class="menu-price">$26</div></div><img src="images/Mori-Main-Meal-Chilli-Teriyaki-Chicken.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Chicken Katsu</h3><p class="menu-desc">Japanese chicken schnitzel, crunch salad, steamed vegetable with rice</p><div class="menu-price">$26</div></div><img src="images/Mori-Main-Meal-Chicken-Katsu.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Teriyaki Tofu (V)</h3><p class="menu-desc">Fried tofu and vegetables with teriyaki sauce, crunch salad, steamed vegetable with rice</p><div class="menu-price">$26</div></div><img src="images/Mori-Main-Meal-Teriyaki-Tofu.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-noodle">
+            <div class="sub-category-title">Mori Noodle</div>
+            <div class="sub-category-desc">[Prawn tempura (+$2)/Chicken katsu (+$2)/Veggie tempura (0$)]</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Ramen</h3><p class="menu-desc">Pork bone broth ramen with egg, seaweed, enoki mushroom, and bamboo shoots</p><div class="menu-price">$19</div></div><img src="images/Mori-Noodle-Tonkotsu-Ramen.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Black Garlic Ramen</h3><p class="menu-desc">Tonkotsu ramen with black garlic flavour, egg, seaweed, enoki mushroom, and bamboo shoots</p><div class="menu-price">$20</div></div><img src="images/Mori-Noodle-Black-Garlic-Ramen.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Spicy Chilli Ramen</h3><p class="menu-desc">Tonkotsu ramen with spicy chilli flavour, egg, seaweed, enoki mushroom, and bamboo shoots</p><div class="menu-price">$20</div></div><img src="images/Mori-Noodle-Spicy-Chilli-Ramen.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Udon</h3><p class="menu-desc">Traditional Japanese noodle soup with seaweed, fish cake, inari, and steamed vegetable</p><div class="menu-price">$18</div></div><img src="images/Mori-Noodle-Udon.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-salad">
+            <div class="sub-category-title">Mori Salad</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Grilled Salmon Salad (GF)</h3><p class="menu-desc">Seared salmon with crunch salad and onion dressing</p><div class="menu-price">$25</div></div><img src="images/Mori-Salad-Grilled-Salmon-Salad.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Salmon Salad (GF)</h3><p class="menu-desc">Salmon Sashimi with crunch salad and onion dressing</p><div class="menu-price">$23</div></div><img src="images/Mori-Salad-Salmon-Salad.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Teriyaki Chicken Salad</h3><p class="menu-desc">Teriyaki chicken with crunch salad and sesame dressing</p><div class="menu-price">$23</div></div><img src="images/Mori-Salad-Teriyaki-Chicken-Salad.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Tofu Salad (V)</h3><p class="menu-desc">Fresh tofu with crunch salad and sesame dressing</p><div class="menu-price">$20</div></div><img src="images/Mori-Salad-Tofu-Salad.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Crunch Salad (V)</h3><p class="menu-desc">Cabbage, carrot, and avocado with sesame dressing</p><div class="menu-price">$15</div></div><img src="images/Mori-Salad-Crunch-Salad.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Wakame Salad (V)</h3><p class="menu-desc">Seasoned Japanese seaweed salad</p><div class="menu-price">$8</div></div><img src="images/Mori-Salad-Wakame-Salad.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-share">
+            <div class="sub-category-title">Mori Share</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Edamame (V, GF)</h3><p class="menu-desc">Boiled soy bean [salt or chilli]</p><div class="menu-price">$6</div></div><img src="images/Mori-Share-Edamame.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Takoyaki (5pcs)</h3><p class="menu-desc">Octopus ball topped tonkatsu sauce and bonito flakes</p><div class="menu-price">$11</div></div><img src="images/Mori-Share-Takoyaki.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Agedashi Tofu</h3><p class="menu-desc">Deep fried tofu in dashi sauce with bonito flakes and seaweed</p><div class="menu-price">$13</div></div><img src="images/Mori-Share-Agedashi-Tofu.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Chicken Karaage</h3><p class="menu-desc">Garlic soy marinade Japanese deep fried chicken with honey mayonnaise</p><div class="menu-price">$18</div></div><img src="images/Mori-Share-Chicken-Karaage.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Prawn Tempura (4pcs)</h3><p class="menu-desc">Lightly battered crispy fried prawns</p><div class="menu-price">$20</div></div><img src="images/Mori-Share-Prawn-Tempura.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-kids">
+            <div class="sub-category-title">Mori - Kids</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Kids Chicken Katsu</h3><p class="menu-desc">Japanese chicken schnitzel, chips, onigiri rice ball, vegetables</p><div class="menu-price">$12</div></div><img src="images/Mori-Kids-Kids-Chicken-Katsu.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Kids Teriyaki chicken</h3><p class="menu-desc">Pan fried chicken with teriyaki sauce, chips, onigiri rice ball, vegetables</p><div class="menu-price">$12</div></div><img src="images/Mori-Kids-Kids-Teriyaki-Chicken.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Kids Chicken Karaage</h3><p class="menu-desc">Deep fried chicken, chips, onigiri rice ball, vegetables</p><div class="menu-price">$12</div></div><img src="images/Mori-Kids-Kids-Chicken-Karaage.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="mori-dessert">
+            <div class="sub-category-title">Mori Dessert</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Strawberry Mochi Ice cream</h3><div class="menu-price">$7</div></div><img src="images/Mori-Dessert-Strawberry-Mochi-Ice-Cream.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Vanilla Mochi Ice Cream</h3><div class="menu-price">$7</div></div><img src="images/Mori-Dessert-Vanilla-Mochi-Ice-Cream.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Matcha Mochi Ice Cream</h3><div class="menu-price">$7</div></div><img src="images/Mori-Dessert-Matcha-Mochi-Ice-Cream.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="side-dish">
+            <div class="sub-category-title">Side Dish</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Steamed Rice</h3><div class="menu-price">$3.5</div></div><img src="images/Side-Dish-Steamed-Rice.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Inari 2 pcs</h3><div class="menu-price">$6</div></div><img src="images/Side-Dish-Inari-2-pcs.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Chips</h3><div class="menu-price">$7</div></div><img src="images/Side-Dish-Chips.webp" class="menu-image"></div>
+        </div>
+
+        <div class="menu-section" id="drinks">
+            <div class="sub-category-title">Drinks</div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">1. Coke 375ml</h3><div class="menu-price">$4</div></div><img src="images/Drinks-Coke-375ml.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">2. Coke Zero 375ml</h3><div class="menu-price">$4</div></div><img src="images/Drinks-Coke-Zero-375ml.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">3. Sprite 375ml</h3><div class="menu-price">$4</div></div><img src="images/Drinks-Sprite-375ml.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">4. Water 600ml</h3><div class="menu-price">$3.5</div></div><img src="images/Drinks-Water-600ml.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">5. Sparkling Water</h3><div class="menu-price">$4.5</div></div><img src="images/Drinks-Sparkling-Water.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">6. Apple Juice</h3><div class="menu-price">$5</div></div><img src="images/Drinks-Apple-Juice.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">7. Orange Juice</h3><div class="menu-price">$5</div></div><img src="images/Drinks-Orange-Juice.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">8. Peach Ice Tea</h3><div class="menu-price">$5</div></div><img src="images/Drinks-Peach-Ice-Tea.webp" class="menu-image"></div>
+            <div class="menu-list-item"><div class="menu-info"><h3 class="menu-name">9. Lemon Ice Tea</h3><div class="menu-price">$5</div></div><img src="images/Drinks-Lemon-Ice-Tea.webp" class="menu-image"></div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <div id="menu-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="메뉴 상세 이미지" class="modal-image">
+            <div class="modal-text">
+                <h2 id="modal-name" class="modal-title">메뉴 이름</h2>
+                <p id="modal-desc" class="modal-description">메뉴 설명</p>
+                <div id="modal-price" class="modal-price-tag">$00.00</div>
+            </div>
+            <button id="close-modal-btn" class="modal-close-btn">Close</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+</body>
+</html>

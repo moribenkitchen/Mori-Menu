@@ -1,0 +1,98 @@
+:root {
+    --mori-dark-green: #19442d;   
+    --mori-light-green: #3b5b4a;  
+    --mori-brown: #5c3723;        
+    --mori-red: #b81c25;          
+    --mori-beige: #fff6ed;        
+    --bg-color: #fdfbf7;          
+}
+
+body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; margin: 0; padding: 0; background-color: var(--mori-beige); color: #333; display: flex; height: 100vh; overflow: hidden; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: var(--mori-light-green); border-radius: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.sidebar { width: 220px; background-color: #ffffff; box-shadow: 2px 0 10px rgba(0,0,0,0.05); display: flex; flex-direction: column; padding: 20px 0; z-index: 10; overflow-y: auto; }
+.brand-logo { font-size: 28px; font-weight: 900; text-align: center; margin-bottom: 20px; color: var(--mori-dark-green); letter-spacing: 3px; }
+
+.menu-tab { padding: 15px 25px; font-size: 16px; font-weight: bold; color: #777; cursor: pointer; transition: all 0.2s; }
+.platter-tab { color: var(--mori-dark-green); font-weight: 900; }
+.menu-tab.active { background-color: var(--mori-dark-green); color: #ffffff !important; border-radius: 0 20px 20px 0; margin-right: 15px; }
+.lunch-tab-style { color: var(--mori-red); }
+
+.main-content { flex: 1; padding: 0 40px 40px 40px; background-color: var(--bg-color); overflow-y: auto; scroll-behavior: smooth; position: relative; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin: 10px 10px 10px 0; box-shadow: inset 2px 0 10px rgba(0,0,0,0.02); }
+.sub-category-title { font-size: 28px; font-weight: 900; margin: 60px 0 10px 0; padding-bottom: 15px; border-bottom: 2px solid var(--mori-light-green); color: var(--mori-dark-green); }
+.sub-category-desc { font-size: 14px; color: var(--mori-light-green); font-weight: bold; margin-bottom: 20px; background: #e8f0eb; padding: 10px; border-radius: 8px; }
+
+.menu-list-item { display: flex; flex-direction: row; align-items: flex-start; padding: 25px 0; border-bottom: 1px solid #eaeaea; }
+.menu-info { flex: 1; padding-right: 30px; }
+.menu-name { font-size: 20px; font-weight: 800; margin: 0 0 10px 0; color: var(--mori-brown); }
+.menu-desc { font-size: 14px; color: #666; line-height: 1.5; margin: 0 0 15px 0; }
+.menu-price { font-size: 18px; font-weight: bold; color: var(--mori-red); }
+.menu-image { width: 140px; height: 140px; border-radius: 12px; object-fit: cover; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex-shrink: 0; }
+/* 🚀 여기서부터 복사해서 style.css 맨 아래에 붙여넣으세요! */
+
+/* 메뉴 리스트에 마우스(손가락) 올렸을 때 클릭할 수 있다는 표시 부여 */
+.menu-list-item { cursor: pointer; transition: background-color 0.2s; }
+.menu-list-item:hover { background-color: #ffffff; border-radius: 12px; }
+
+/* 팝업(모달) 전체 배경 (반투명 검은색) */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000; /* 가장 앞으로 가져오기 */
+    opacity: 1; transition: opacity 0.3s ease;
+}
+
+/* 팝업이 숨겨졌을 때 */
+.modal-overlay.hidden {
+    opacity: 0; pointer-events: none; visibility: hidden;
+}
+
+/* 팝업창 하얀색 알맹이 */
+.modal-content {
+    background-color: #fff;
+    width: 90%; max-width: 500px; /* 너무 커지지 않게 제한 */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: translateY(0); transition: transform 0.3s ease;
+    display: flex; flex-direction: column;
+}
+
+.modal-overlay.hidden .modal-content {
+    transform: translateY(20px); /* 닫힐 때 살짝 아래로 내려가는 애니메이션 */
+}
+
+/* 팝업창 안의 큰 이미지 */
+.modal-image {
+    width: 100%; height: 350px;
+    object-fit: cover;
+}
+
+/* 팝업창 글자 구역 */
+.modal-text {
+    padding: 30px 30px 10px 30px; text-align: center;
+}
+
+.modal-title {
+    font-size: 28px; font-weight: 900; color: var(--mori-dark-green); margin: 0 0 15px 0;
+}
+
+.modal-description {
+    font-size: 16px; color: #666; line-height: 1.5; margin: 0 0 20px 0;
+}
+
+.modal-price-tag {
+    font-size: 24px; font-weight: bold; color: var(--mori-red); margin-bottom: 20px;
+}
+
+/* 닫기 버튼 (사진 속 다크그레이 스타일) */
+.modal-close-btn {
+    background-color: #4a4d52; color: white; border: none;
+    padding: 18px; font-size: 18px; font-weight: bold;
+    cursor: pointer; width: 100%; transition: background-color 0.2s;
+}
+
+.modal-close-btn:hover { background-color: #333; }
