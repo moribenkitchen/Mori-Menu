@@ -87,29 +87,3 @@ modalOverlay.addEventListener('click', (e) => {
         closeModal();
     }
 });
-
-// --- 4. 호주 멜버른 시간 기준: 런치 메뉴 자동 숨김 기능 ---
-function checkLunchTime() {
-    const options = { timeZone: 'Australia/Melbourne', hour: '2-digit', hour12: false };
-    const formatter = new Intl.DateTimeFormat([], options);
-    const currentHour = parseInt(formatter.format(new Date()), 10);
-
-    const isLunchTime = currentHour >= 10 && currentHour < 15;
-    const lunchMenuIds = ['mori-ben', 'mori-lunch-roll', 'mori-snack', 'mori-sushi-box'];
-
-    lunchMenuIds.forEach(id => {
-        const section = document.getElementById(id);
-        const tab = document.querySelector(`.menu-tab[onclick*="${id}"]`);
-
-        if (isLunchTime) {
-            if (section) section.style.display = 'block';
-            if (tab) tab.style.display = 'inline-block'; // 가로 탭이므로 inline-block으로 설정
-        } else {
-            if (section) section.style.display = 'none';
-            if (tab) tab.style.display = 'none';
-        }
-    });
-}
-
-checkLunchTime();
-setInterval(checkLunchTime, 60000);
