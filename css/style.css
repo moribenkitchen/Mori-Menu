@@ -1,0 +1,56 @@
+/* 🎨 style.css: 모리 벤토 상단 가로 메뉴바 버전 */
+
+:root {
+    --mori-dark-green: #19442d;   
+    --mori-light-green: #3b5b4a;  
+    --mori-brown: #5c3723;        
+    --mori-red: #b81c25;          
+    --mori-beige: #fff6ed;        
+    --bg-color: #fdfbf7;          
+}
+
+body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: #333; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+/* 스크롤바 디자인 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--mori-light-green); border-radius: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* 🚀 변경됨: 상단 가로 스크롤 메뉴바 */
+.sidebar { width: 100%; background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; flex-direction: row; align-items: center; padding: 15px 20px; z-index: 10; overflow-x: auto; white-space: nowrap; box-sizing: border-box; flex-shrink: 0; scroll-behavior: smooth; }
+.sidebar::-webkit-scrollbar { display: none; } /* 상단 탭은 손가락 스와이프를 위해 스크롤바 숨김 */
+
+.brand-logo { font-size: 22px; font-weight: 900; color: var(--mori-dark-green); letter-spacing: 2px; margin-right: 25px; flex-shrink: 0; }
+
+/* 🚀 변경됨: 동그란 알약 모양의 탭 디자인 */
+.menu-tab { padding: 10px 20px; font-size: 15px; font-weight: bold; color: #777; cursor: pointer; transition: all 0.2s; border-radius: 25px; margin-right: 10px; flex-shrink: 0; }
+.platter-tab { color: var(--mori-dark-green); font-weight: 900; }
+.menu-tab.active { background-color: var(--mori-dark-green); color: #ffffff !important; }
+.lunch-tab-style { color: var(--mori-red); }
+
+/* 🚀 변경됨: 넓어진 메인 콘텐츠 구역 */
+.main-content { flex: 1; padding: 0 20px 40px 20px; background-color: var(--bg-color); overflow-y: auto; scroll-behavior: smooth; position: relative; }
+.sub-category-title { font-size: 26px; font-weight: 900; margin: 40px 0 10px 0; padding-bottom: 15px; border-bottom: 2px solid var(--mori-light-green); color: var(--mori-dark-green); }
+.sub-category-desc { font-size: 14px; color: var(--mori-light-green); font-weight: bold; margin-bottom: 20px; background: #e8f0eb; padding: 10px; border-radius: 8px; }
+
+/* 메뉴 리스트와 사진 크기 미세 조정 */
+.menu-list-item { display: flex; flex-direction: row; align-items: center; padding: 20px 0; border-bottom: 1px solid #eaeaea; cursor: pointer; transition: background-color 0.2s; }
+.menu-list-item:hover { background-color: #ffffff; border-radius: 12px; }
+.menu-info { flex: 1; padding-right: 20px; }
+.menu-name { font-size: 18px; font-weight: 800; margin: 0 0 8px 0; color: var(--mori-brown); }
+.menu-desc { font-size: 13px; color: #666; line-height: 1.4; margin: 0 0 12px 0; }
+.menu-price { font-size: 18px; font-weight: bold; color: var(--mori-red); }
+.menu-image { width: 110px; height: 110px; border-radius: 12px; object-fit: cover; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex-shrink: 0; }
+
+/* 팝업 모달 CSS (기존 유지) */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; z-index: 1000; opacity: 1; transition: opacity 0.3s ease; }
+.modal-overlay.hidden { opacity: 0; pointer-events: none; visibility: hidden; }
+.modal-content { background-color: #fff; width: 90%; max-width: 500px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: translateY(0); transition: transform 0.3s ease; display: flex; flex-direction: column; }
+.modal-overlay.hidden .modal-content { transform: translateY(20px); }
+.modal-image { width: 100%; height: 350px; object-fit: cover; }
+.modal-text { padding: 30px 30px 10px 30px; text-align: center; }
+.modal-title { font-size: 28px; font-weight: 900; color: var(--mori-dark-green); margin: 0 0 15px 0; }
+.modal-description { font-size: 16px; color: #666; line-height: 1.5; margin: 0 0 20px 0; }
+.modal-price-tag { font-size: 24px; font-weight: bold; color: var(--mori-red); margin-bottom: 20px; }
+.modal-close-btn { background-color: #4a4d52; color: white; border: none; padding: 18px; font-size: 18px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s; }
+.modal-close-btn:hover { background-color: #333; }
